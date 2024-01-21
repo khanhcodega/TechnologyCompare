@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title">
+        <item>Name</item>
+        <item>System</item>
+        <item>Price</item>
+        <item>Cpu</item>
+        <item>Memory</item>
+        <item>Ram</item>
+        <item>Battery</item>
+        <item>Screen</item>
+        <item>Camera</item>
+        <item>Sim</item>
+    </string-array>
+    <string-array name="gender_options">
+        <item>Chưa chọn</item>
+        <item>Nam</item>
+        <item>Nữ</item>
+        <item>Khác</item>
+    </string-array>
+
+</resources>

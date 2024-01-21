@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.technologycompare.MainActivity">
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/appbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="top">-->
+
+<!--        &lt;!&ndash; Toolbar for the project name &ndash;&gt;-->
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="#FF4081">-->
+
+<!--            &lt;!&ndash; Add the project name as the title &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/app_name"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:layout_gravity="start" />-->
+<!--        </androidx.appcompat.widget.Toolbar>-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="?android:attr/selectableItemBackground"> <!-- Hiệu ứng nhấp -->
+
+        <LinearLayout
+            android:id="@+id/tvHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#F3896E"> <!-- Đặt màu nền cho mục menu -->
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="16sp"
+                android:textColor="#000" /> <!-- Thay đổi màu văn bản thành màu trắng -->
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:id="@+id/tvSupport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#8FC1E6"> <!-- Đặt màu nền cho mục menu -->
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_support" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Support"
+                android:textSize="16sp"
+                android:textColor="#000" /> <!-- Thay đổi màu văn bản -->
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:id="@+id/tvUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#83CAB4"> <!-- Đặt màu nền cho mục menu -->
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textSize="16sp"
+                android:textColor="#000" /> <!-- Thay đổi màu văn bản thành màu trắng -->
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_drawable_btn"
+            android:orientation="horizontal"
+            android:weightSum="11">
+
+            <ImageView
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="btnSearch"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:text=""
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="10"
+                android:hint="Nhập từ khóa để tìm kiếm "
+                android:singleLine="true"
+                android:padding="10dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="65dp"
+            android:orientation="vertical">
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvFeature"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:fontFamily="sans-serif"-->
+            <!--                android:text="Feature"-->
+            <!--                android:textColor="#000"-->
+            <!--                android:textSize="25sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/layoutFeature"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/tvFeature"-->
+            <!--                android:layout_marginTop="11dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="10dp"-->
+            <!--                    android:layout_marginRight="10dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="#DFF1F6"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:text="Purcharse Support"-->
+            <!--                    android:textSize="20sp" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="10dp"-->
+            <!--                    android:layout_marginRight="10dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="#DFF1F6"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:text="Compare Information"-->
+            <!--                    android:textSize="20sp" />-->
+
+            <!--            </LinearLayout>-->
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvNewDevice"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/layoutFeature"-->
+            <!--                android:layout_alignParentStart="true"-->
+            <!--                android:layout_marginStart="0dp"-->
+            <!--                android:layout_marginTop="19dp"-->
+            <!--                android:fontFamily="sans-serif"-->
+            <!--                android:text="New"-->
+            <!--                android:textColor="#000"-->
+            <!--                android:textSize="25sp"-->
+            <!--                android:textStyle="bold" />-->
+
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvNewDevice"
+                android:layout_marginTop="10dp"
+                android:clipToPadding="false"
+                android:descendantFocusability="blocksDescendants"
+                android:numColumns="2">
+
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCompare"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="8">
+
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+
+                    android:id="@+id/imgCompareDevice1"
+                    android:layout_width="75dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add_devices" />
+
+                <ImageView
+                    android:id="@+id/imgClose1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toEndOf="@+id/imgCompareDevice1"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_close" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tvCompareDevice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgCompareDevice1"
+                    android:text="Device one"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgCompareDevice2"
+                    android:layout_width="75dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add_devices" />
+
+                <ImageView
+                    android:id="@+id/imgClose2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toEndOf="@+id/imgCompareDevice2"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_close" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tvCompareDevice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgCompareDevice2"
+                    android:text="Device two"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnCompare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:text="compare"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/custom_drawable_btn_focused"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/custom_drawable_btn_focused"
+                    android:text="cancel"
+
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+
+

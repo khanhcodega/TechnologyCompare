@@ -1,0 +1,192 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="1dp"
+    android:paddingHorizontal="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="16dp">
+
+        <!-- Nút trở về trên cùng -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="-3dp"
+            android:onClick="goBackFunction"
+            android:src="@drawable/ic_goback" />
+
+        <!-- Các thành phần giao diện khác -->
+        <!-- ... -->
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imgDevice"
+        android:layout_width="141dp"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="87dp"
+        android:adjustViewBounds="true"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_iphone14"
+        android:padding="8dp" />
+
+
+    <TextView
+        android:id="@+id/tvNameDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/luotlike"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="ie 14 pro maxiphone 14 pro maxiphone 14 pro maxiphone 14 pro max"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPriceDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameDevice"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="4dp"
+        android:text="27.000.000 đ"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvBattery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPriceDevice"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="4dp"
+        android:text="Battery: 4000 mAh"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvRam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBattery"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="4dp"
+        android:text="RAM: 8 GB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRam"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="4dp"
+        android:text="Storage: 128 GB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvChip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStorage"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="4dp"
+        android:text="Chip: Snapdragon 888"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvChip"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="4dp"
+        android:text="Camera: 108 MP"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCamera"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="4dp"
+        android:text="Screen: 6.5 inches"
+        android:textSize="16sp" />
+
+    <!-- TextView luotlike -->
+    <LinearLayout
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tvScreen"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_draw_bg_img"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="6dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:text="buy"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/btnLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDevice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp"
+        android:button="@drawable/custom_drawable_checkbox"
+        android:padding="15dp"
+        android:text="Like"
+
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/luotlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnLike"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@id/btnLike"
+        android:text="TextView" />
+
+</RelativeLayout>

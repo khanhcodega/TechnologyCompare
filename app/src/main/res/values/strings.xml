@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TechnologyCompare</string>
+    <string name="Name">Name</string>
+    <string name="Bio">Bio</string>
+    <string name="Gender">Gender</string>
+    <string name="Birthday">Birthday</string>
+    <string name="Email">Email</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_user">User</string>
+    <string name="username">Username</string>
+    <string name="password">Mật khẩu</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="save_login">Save login</string>
+    <string name="title_login">Save login</string>
+    <string name="title_register">Save login</string>
+    <string name="title_resetpass">Đặt lại mật khẩu</string>
+    <string name="title_changepass">Đổi mật khẩu</string>
+    <string name="text_confirm">Xác nhận</string>
+    <string name="login">Đăng nhập</string>
+
+</resources>

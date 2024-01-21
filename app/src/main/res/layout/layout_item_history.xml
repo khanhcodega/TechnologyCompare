@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layoutHistory"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="0dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:weightSum="8"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgDevice1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_devices" />
+
+
+
+        <TextView
+            android:id="@+id/tvCompareDevice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgDevice1"
+            android:text="Device one"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgDevice2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_devices" />
+
+
+        <TextView
+            android:id="@+id/tvCompareDevice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgDevice2"
+            android:text="Device one"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_weight="2"
+
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:text="cancel"
+            android:layout_gravity="center_vertical"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

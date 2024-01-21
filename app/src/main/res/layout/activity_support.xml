@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--    tools:context="com.example.technologycompare.MainActivity">-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="?android:attr/selectableItemBackground"> <!-- Hiệu ứng nhấp -->
+
+        <LinearLayout
+            android:id="@+id/tvHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#F3896E"> <!-- Đặt màu nền cho mục menu -->
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="16sp"
+                android:textColor="#000" /> <!-- Thay đổi màu văn bản thành màu trắng -->
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:id="@+id/tvSupport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#8FC1E6"> <!-- Đặt màu nền cho mục menu -->
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_support" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Support"
+                android:textSize="16sp"
+                android:textColor="#000" /> <!-- Thay đổi màu văn bản -->
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:id="@+id/tvUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#83CAB4"> <!-- Đặt màu nền cho mục menu -->
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textSize="16sp"
+                android:textColor="#000" /> <!-- Thay đổi màu văn bản thành màu trắng -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            >
+
+            <CheckBox
+                android:id="@+id/cbCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etPrice"
+                android:layout_marginTop="15dp"
+                android:text="Camera"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cbRam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbCamera"
+                android:layout_marginTop="3dp"
+                android:text="Ram"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cbProcessor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbRam"
+                android:layout_marginTop="0dp"
+                android:text="Processor"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+
+            <CheckBox
+                android:id="@+id/cbBattery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbProcessor"
+                android:layout_marginTop="0dp"
+                android:text="Battery"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cbMemory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbBattery"
+                android:layout_marginTop="1dp"
+                android:text="Memory"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cbScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbMemory"
+                android:layout_marginTop="-2dp"
+                android:text="Screen"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="268dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPrice"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/cbCamera"
+                android:text="MỨU ĐỘ ƯU TIÊN"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/checkboxLayout"
+                android:layout_width="279dp"
+                android:layout_height="178dp"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:textSize="18dp">
+                <!-- Add dynamically created CheckBoxes here -->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Nhập giá tiền"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnCompare"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/cbScreen"
+        android:layout_marginTop="3dp"
+        android:text="Gợi Ý"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvNewDevice"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:descendantFocusability="blocksDescendants"
+        android:numColumns="1">
+
+    </GridView>
+</LinearLayout>

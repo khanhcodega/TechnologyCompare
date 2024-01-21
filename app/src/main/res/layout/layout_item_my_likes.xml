@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="4dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/img_iphone14"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvNameDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDevice"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="ie 14 pro maxiphone 14 pro maxiphone 14 pro maxiphone 14 pro max"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPriceDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameDevice"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="4dp"
+        android:text="27.000.000 đ"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
